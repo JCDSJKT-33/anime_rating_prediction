@@ -9,8 +9,8 @@ Most user generated ratings from streaming platforms are noisy, biased, and unre
 **Stakeholder**: Streaming platform product managers.
 
 ## **Objectives**
-1. Develop a machine learning that predicts user score with high accuracy (RMSE < 0.5).
-2. Provides feature insights into what drives audience perception.
+1. Develop a machine learning model that predicts user score with high accuracy (RMSE < 0.5).
+2. Provide feature insights into what drives audience perception.
 
 ## **Evaluation Metrics**
 - **RMSE** (target < 0.5): Perfect for models that wants to achieve high accuracy.
