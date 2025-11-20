@@ -1,6 +1,5 @@
 # **Anime Rating Prediction with Machine Learning**
 
-## **Business Problem**
 Most user generated ratings from streaming platforms are noisy, biased, and unreliable. Popularity spikes can inflate scores, and older, less-known titles have only a few votes. This inconsistencies hurt recommendation quality and content discovery for users. We aim to develop a more reliable and data-driven model to estimate expected audience score of animes. The insights can be used by platforms to improve their catalog management, content recommendations for users, and allocate marketing budget.
 
 **Goal**: Accurately estimate an anime's audience score (1-10) to improve content ranking and user recommendation.
