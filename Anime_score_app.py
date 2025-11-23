@@ -220,7 +220,13 @@ def cleanForDisplay(opt):
              return opt
 displayOption = [cleanForDisplay(o) for o in ratingRaw]
 rating = st.selectbox('Rating', displayOption)  
-popularity = st.number_input("popularity", min_value=1, max_value=22225)
+popularity = st.number_input(
+    "popularity", 
+    min_value=1, 
+    max_value=22225,
+    step=0.01,
+    format="%.2f"
+)
 
 DurationDefault = 23
 useSDuration = st.toggle("Use Duration", value=True)
@@ -228,7 +234,7 @@ if useSDuration:
     duration = st.number_input(
         "Duration Minutes", 
         min_value=1, 
-        max_value=168
+        max_value=168,
         step=0.01,
         format="%.2f"
     )
@@ -254,7 +260,7 @@ scoredby = st.number_input(
 members = st.number_input(
     "Members", 
     min_value=209.00, 
-    max_value=4231885.00
+    max_value=4231885.00,
     step=0.01,
     format="%.2f"
 )
@@ -313,5 +319,4 @@ if st.button("Predict"):
         Provides an indication that the relative error of the model around **4.37%**.
         Which means the model has an accuracy of more than **95%**.
         """
-
     )
