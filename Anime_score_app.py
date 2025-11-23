@@ -225,9 +225,16 @@ popularity = st.number_input("popularity", min_value=1, max_value=22225)
 DurationDefault = 23
 useSDuration = st.toggle("Use Duration", value=True)
 if useSDuration:
-    duration = st.number_input("Duration Minutes", min_value=1, max_value=168)
+    duration = st.number_input(
+        "Duration Minutes", 
+        min_value=1, 
+        max_value=168
+        step=0.01,
+        format="%.2f"
+    )
 else:
     duration = DurationDefault
+
 favorites = st.number_input(
     "Favorites", 
     min_value=0.0, 
@@ -235,8 +242,22 @@ favorites = st.number_input(
     step=0.01,
     format="%.2f"
 )
-scoredby = st.number_input("Scored By", min_value=102.0, max_value=2980783.00)
-members = st.number_input("Members", min_value=209.00, max_value=4231885.00)
+
+scoredby = st.number_input(
+    "Scored By", 
+    min_value=102.0, 
+    max_value=2980783.00,
+    step=0.01,
+    format="%.2f"
+)
+
+members = st.number_input(
+    "Members", 
+    min_value=209.00, 
+    max_value=4231885.00
+    step=0.01,
+    format="%.2f"
+)
 
 if st.button("Predict"):
     df = pd.DataFrame([{
@@ -294,4 +315,3 @@ if st.button("Predict"):
         """
 
     )
-
