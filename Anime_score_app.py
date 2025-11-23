@@ -9,7 +9,7 @@ st.title("📺 MyAnimeList Score Predictor")
 st.markdown("""
 ### This tool uses a trained machine learning model to estimate an anime's MyAnimeList user rating score based on its metadata and engagement metrics.
 
-**How to use:**
+####**How to use:**
 """)
 st.write("""
 1. Use the search box to find your anime on MyAnimeList.
